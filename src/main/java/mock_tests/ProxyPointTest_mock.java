@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-class ComplexProxyTest_mock {
+class ProxyPointTest_mock {
 
     //private ComplexNumber n = new ComplexNumber(1, 2);
     //private ComplexInterface proxy = (ComplexInterface) ComplexProxy.newProxyInstance(n);

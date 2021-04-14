@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ComplexNumberTest {
+class PointTest {
 
     private ComplexNumber n = new ComplexNumber(1, 2);
     private ComplexNumber n1 = new ComplexNumber(6, 1.5);

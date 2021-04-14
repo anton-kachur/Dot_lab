@@ -7,7 +7,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ComplexProxyTest {
+class ProxyPointTest {
 
     private ComplexNumber n1 = new ComplexNumber(1, 2);
     private ComplexInterface proxy = (ComplexInterface) ComplexProxy.newProxyInstance(n1);

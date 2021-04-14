@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class ComplexNumberTest_mock {
+class PointTest_mock {
     @Test
     void model_test_mock() {
         ComplexNumber n = mock(ComplexNumber.class);

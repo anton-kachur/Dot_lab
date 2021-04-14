@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-class ComplexNumberExponentialTest_mock {
+class EllipsoidTest_mock {
 
     @Test
     void model_test_mock() {

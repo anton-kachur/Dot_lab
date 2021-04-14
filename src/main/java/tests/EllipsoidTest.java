@@ -4,7 +4,7 @@ import l1.ComplexNumberExponential.ComplexNumberExponential;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-class ComplexNumberExponentialTest {
+class EllipsoidTest {
 
     private ComplexNumberExponential n = new ComplexNumberExponential(4, 2);
 
