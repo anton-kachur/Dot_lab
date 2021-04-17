@@ -1,7 +1,5 @@
 package l2.patternDecorator.ComplexNumExponential;
 
-import l1.ComplexNumberExponential.ComplexNumberExponential;
-
 public class ComplexNumExponentialView {
     private ComplexNumExponential model;
 

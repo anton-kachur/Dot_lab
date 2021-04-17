@@ -8,12 +8,12 @@ import java.lang.Math;
 
 @Info(name = "Exponential form")
 public
-class ComplexNumberExponential extends ComplexNumber {
+class Ellipsoid extends ComplexNumber {
     private double real;
     private double imaginary;
 
 
-    public ComplexNumberExponential(double a, double b){
+    public Ellipsoid(double a, double b){
         super(a, b);
         real = a;
         imaginary = b;

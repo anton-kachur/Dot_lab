@@ -1,11 +1,11 @@
 package l2.ComplexNumberExponential;
 
-import l1.ComplexNumberExponential.ComplexNumberExponential;
+import l1.ComplexNumberExponential.Ellipsoid;
 
 public class ComplexNumberExponentialView {
-    private ComplexNumberExponential model;
+    private Ellipsoid model;
 
-    public ComplexNumberExponentialView(ComplexNumberExponential model) {
+    public ComplexNumberExponentialView(Ellipsoid model) {
         this.model = model;
     }
 
@@ -14,7 +14,7 @@ public class ComplexNumberExponentialView {
         return model.toString();
     }
 
-    public ComplexNumberExponential setModel(ComplexNumberExponential m) {
+    public Ellipsoid setModel(Ellipsoid m) {
         this.model = m;
         return this.model;
     }

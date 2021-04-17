@@ -1,4 +1,8 @@
-package lab1;
+package lab1.Point;
+
+import lab1.Annotation;
+import lab1.ClassAnnotation;
+import lab1.PointInterface;
 
 @ClassAnnotation(name = "Point class")
 public class Point implements PointInterface {

@@ -1,57 +1,58 @@
 package mock_tests;
 
-import l1.ComplexNumber.ComplexNumber;
-import l1.ComplexNumber.ComplexNumberController;
+import lab1.Point.Point;
+import lab1.Point.PointController;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class PointTest_mock {
+
     @Test
     void model_test_mock() {
-        ComplexNumber n = mock(ComplexNumber.class);
-        when(n.getImaginary()).thenReturn("2.0i");
-        when(n.getReal()).thenReturn("1.0");
-        when(n.toString()).thenReturn("1.0 + 2.0i");
-        when(n.setImaginary(2)).thenReturn(2.0);
-        when(n.setReal(1)).thenReturn(1.0);
+        Point p = mock(Point.class);
+        when(p.getX()).thenReturn(0.0);
+        when(p.getY()).thenReturn(0.0);
+        when(p.toString()).thenReturn("Point(0.0, 0.0)");
+        when(p.setX(2.2)).thenReturn(2.2);
+        when(p.setY(1.1)).thenReturn(1.1);
 
-        ComplexNumberController c = new ComplexNumberController(n);
+        PointController pc = new PointController(p);
 
-        assertEquals("1.0 + 2.0i", c.toString());
-        assertEquals("1.0", c.getNumberReal());
-        verify(n).getReal();
-        assertEquals("2.0i", c.getNumberImaginary());
-        verify(n).getImaginary();
-        assertEquals(1.0, c.setNumberReal(1));
-        verify(n).setReal(1);
-        assertEquals(2.0, c.setNumberImaginary(2));
-        verify(n).setImaginary(2);
+        assertEquals("Point(0.0, 0.0)", p.toString());
+        assertEquals(0.0, pc.getCoordX());
+        verify(p).getX();
+        assertEquals(0.0, pc.getCoordY());
+        verify(p).getY();
+        assertEquals(2.2, pc.setCoordX(2.2));
+        verify(p).setX(2.2);
+        assertEquals(1.1, pc.setCoordY(1.1));
+        verify(p).setY(1.1);
     }
 
     @Test
     void controller_test_mock() {
-        ComplexNumber n = mock(ComplexNumber.class);
-        ComplexNumberController c = mock(ComplexNumberController.class);
+        Point p = mock(Point.class);
+        PointController pc = mock(PointController.class);
 
-        c.setModel(n);
+        pc.setModel(p);
 
-        when(c.getNumberImaginary()).thenReturn("2.0i");
-        when(c.getNumberReal()).thenReturn("1.0");
-        when(c.toString()).thenReturn("1.0 + 2.0i");
-        when(c.setNumberImaginary(2)).thenReturn(2.0);
-        when(c.setNumberReal(1)).thenReturn(1.0);
+        when(pc.getCoordX()).thenReturn(0.0);
+        when(pc.getCoordY()).thenReturn(0.0);
+        when(pc.toString()).thenReturn("Point(0.0, 0.0)");
+        when(pc.setCoordX(2.3)).thenReturn(2.3);
+        when(pc.setCoordY(2.2)).thenReturn(2.2);
 
-        assertEquals("1.0 + 2.0i", c.toString());
-        assertEquals("1.0", c.getNumberReal());
-        verify(c).getNumberReal();
-        assertEquals("2.0i", c.getNumberImaginary());
-        verify(c).getNumberImaginary();
-        assertEquals(1.0, c.setNumberReal(1));
-        verify(c).setNumberReal(1);
-        assertEquals(2.0, c.setNumberImaginary(2));
-        verify(c).setNumberImaginary(2);
+        assertEquals("Point(0.0, 0.0)", pc.toString());
+        assertEquals(0.0, pc.getCoordY());
+        verify(pc).getCoordY();
+        assertEquals(0.0, pc.getCoordX());
+        verify(pc).getCoordX();
+        assertEquals(2.3, pc.setCoordX(2.3));
+        verify(pc).setCoordX(2.3);
+        assertEquals(2.2, pc.setCoordY(2.2));
+        verify(pc).setCoordY(2.2);
     }
 
 }

@@ -1,22 +1,21 @@
 package tests;
 
-import l1.ComplexInterface;
-import l1.ComplexNumber.ComplexNumber;
-import l1.ComplexProxy.ComplexProxy;
+import lab1.Point.Point;
+import lab1.PointInterface;
+import lab1.ProxyPoint.ProxyPoint;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProxyPointTest {
-
-    private ComplexNumber n1 = new ComplexNumber(1, 2);
-    private ComplexInterface proxy = (ComplexInterface) ComplexProxy.newProxyInstance(n1);
+    private final Point p = new Point(0.0, 1.0);
+    private final PointInterface proxy = (PointInterface) ProxyPoint.newProxyInstance(p);
 
     @Test
     @DisplayName("Test for invoke")
     void invoke() {
-        assertEquals(proxy.getReal(), "1.0");
-        assertNotEquals(proxy.getReal(), "2.0");
+        assertEquals(proxy.getX(), 0.0);
+        assertEquals(proxy.getY(), 1.0);
     }
 
     @Test

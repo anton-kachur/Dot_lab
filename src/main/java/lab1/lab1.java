@@ -1,5 +1,9 @@
 package lab1;
 
+import lab1.ProxyPoint.ProxyPoint;
+import lab1.Ellipsoid.Ellipsoid;
+import lab1.Point.Point;
+
 import java.lang.String;
 import java.lang.reflect.*;
 import java.lang.*;

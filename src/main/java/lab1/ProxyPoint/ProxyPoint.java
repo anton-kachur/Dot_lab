@@ -1,4 +1,7 @@
-package lab1;
+package lab1.ProxyPoint;
+
+import lab1.Annotation;
+import lab1.ClassAnnotation;
 
 import java.lang.reflect.*;
 

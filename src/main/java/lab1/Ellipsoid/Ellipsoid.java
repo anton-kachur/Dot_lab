@@ -1,4 +1,9 @@
-package lab1;
+package lab1.Ellipsoid;
+
+import lab1.Annotation;
+import lab1.ClassAnnotation;
+import lab1.Point.Point;
+import org.apache.commons.math3.util.Precision;
 
 @ClassAnnotation(name = "Ellipsoid class")
 public
@@ -35,7 +40,7 @@ class Ellipsoid extends Point {
 
     @Annotation(name="Get perimeter of ellipsoid")
     public double getPerim(){
-        return 4*((Math.PI*a*b - Math.pow((a - b), 2))/(a + b));
+        return Precision.round(4*((Math.PI*a*b - Math.pow((a - b), 2))/(a + b)), 3);
     }
 
     public void move(double x_coord, double y_coord){

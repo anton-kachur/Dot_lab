@@ -1,7 +1,7 @@
 package mock_tests;
 
-import l1.ComplexNumber.ComplexNumber;
-import l1.ComplexNumberExponential.ComplexNumberExponential;
+import lab1.Ellipsoid.Ellipsoid;
+import lab1.Point.Point;
 import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.mock;
@@ -11,14 +11,19 @@ import static org.mockito.Mockito.*;
 
 class ProxyPointTest_mock {
 
-    //private ComplexNumber n = new ComplexNumber(1, 2);
-    //private ComplexInterface proxy = (ComplexInterface) ComplexProxy.newProxyInstance(n);
-
     @Test
     void Proxy_mock_test() {
-        ComplexNumber proxy = mock(ComplexNumberExponential.class);
-        when(proxy.getReal()).thenReturn("1.0");
-        assertEquals(proxy.getReal(), "1.0");
-        verify(proxy).getReal();
+        Point proxy = mock(Ellipsoid.class);
+
+        when(proxy.toString()).thenReturn("Point(1.0, 2.0)");
+        assertEquals(proxy.toString(), "Point(1.0, 2.0)");
+
+        when(proxy.getX()).thenReturn(1.0);
+        assertEquals(proxy.getX(), 1.0);
+        verify(proxy).getX();
+
+        when(proxy.getY()).thenReturn(2.0);
+        assertEquals(proxy.getY(), 2.0);
+        verify(proxy).getY();
     }
 }

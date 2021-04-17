@@ -71,5 +71,6 @@
     </orderEntry>
     <orderEntry type="library" name="org.mockito:mockito-core:2.2.2" level="project" />
     <orderEntry type="library" name="spring:spring-mock:1.0.2" level="application" />
+    <orderEntry type="library" name="org.apache.commons:commons-math3:3.3" level="project" />
   </component>
 </module>

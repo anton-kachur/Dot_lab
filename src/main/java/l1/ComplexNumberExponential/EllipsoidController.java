@@ -1,9 +1,10 @@
 package l1.ComplexNumberExponential;
 
-public class ComplexNumberExponentialView {
+public class EllipsoidController {
     private Ellipsoid model;
+    //private ComplexNumberExponentialView view;
 
-    public ComplexNumberExponentialView(Ellipsoid model) {
+    public EllipsoidController(Ellipsoid model) {
         this.model = model;
     }
 

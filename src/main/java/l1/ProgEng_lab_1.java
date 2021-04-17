@@ -1,7 +1,7 @@
 package l1;
 
 import l1.ComplexNumber.ComplexNumber;
-import l1.ComplexNumberExponential.ComplexNumberExponential;
+import l1.ComplexNumberExponential.Ellipsoid;
 import l1.ComplexProxy.ComplexProxy;
 
 import java.lang.String;
@@ -16,9 +16,9 @@ public class ProgEng_lab_1 {
     //**************************Generates random name************************************************
     public static void main (String []args) throws InvocationTargetException, IllegalAccessException, ClassNotFoundException {
         ComplexNumber n1 = new ComplexNumber(1, 2);
-        ComplexNumberExponential n2 = new ComplexNumberExponential(1, 2);
+        Ellipsoid n2 = new Ellipsoid(1, 2);
 
-        Class clazz = ComplexNumberExponential.class;
+        Class clazz = Ellipsoid.class;
         Method[] methods = clazz.getMethods();
         System.out.println("Class: " + clazz.getName() + ";\nSuperclass: " + clazz.getSuperclass().getName()+";\n");
 
