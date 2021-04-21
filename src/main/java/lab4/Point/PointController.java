@@ -2,7 +2,7 @@ package lab4.Point;
 
 public class PointController {
     private Point model;
-    //private PointView view;
+    private PointView view;
 
     public PointController(Point model) {
         this.model = model;

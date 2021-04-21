@@ -1,10 +1,10 @@
 package lab4.Point;
 
-import lab4.patternObserver.Observer;
+import lab4.ObserverPattern.Observer;
 import lab4.Annotation;
 import lab4.ClassAnnotation;
 import lab4.PointInterface;
-import lab4.patternObserver.Notifier;
+import lab4.ObserverPattern.Notifier;
 
 import java.util.ArrayList;
 import java.util.List;

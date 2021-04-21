@@ -1,10 +1,11 @@
-package lab4.Ellipsoid;
+package lab4.Decorator.Ellipsoid;
 
-public class EllipsoidController {
-    private Ellipsoid model;
-    private Ellipsoid view;
+import lab4.Ellipsoid.Ellipsoid;
 
-    public EllipsoidController(Ellipsoid model) {
+public class EllipsoidView {
+    private lab4.Ellipsoid.Ellipsoid model;
+
+    public EllipsoidView(Ellipsoid model) {
         this.model = model;
     }
 
@@ -18,11 +19,5 @@ public class EllipsoidController {
     public double getCoordY() {
         return model.getY();
     }
-
     public double getEllipsoidPerim() { return model.getPerim(); }
-
-    public Ellipsoid setModel(Ellipsoid m) {
-        this.model = m;
-        return this.model;
-    }
 }

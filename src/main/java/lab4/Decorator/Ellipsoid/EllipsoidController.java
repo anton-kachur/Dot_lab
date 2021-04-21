@@ -1,4 +1,6 @@
-package lab4.Ellipsoid;
+package lab4.Decorator.Ellipsoid;
+
+import lab4.Ellipsoid.Ellipsoid;
 
 public class EllipsoidController {
     private Ellipsoid model;
@@ -21,7 +23,7 @@ public class EllipsoidController {
 
     public double getEllipsoidPerim() { return model.getPerim(); }
 
-    public Ellipsoid setModel(Ellipsoid m) {
+    public lab4.Ellipsoid.Ellipsoid setModel(Ellipsoid m) {
         this.model = m;
         return this.model;
     }

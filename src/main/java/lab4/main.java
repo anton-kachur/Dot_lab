@@ -5,14 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 class main {
-    main p;
-    MainController m;
-
+    ControllerOfPatterns m;
     main(int choice) {
-        m = new MainController(choice);
+        m = new ControllerOfPatterns(choice);
     }
 
-    public static void main (String []args) {
+    public static void main(String []args) {
         List<main> mains = new ArrayList<>();
 
         for (int i=1; i<6; i++)
