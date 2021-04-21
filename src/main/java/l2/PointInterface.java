@@ -3,7 +3,7 @@ package l2;
 import l2.ComplexNumber.ComplexNumber;
 import l2.patternProxy.NewComplexProxy.NewComplexProxy;
 
-public interface ComplexInterface {
+public interface PointInterface {
     @About(name="Method, which gets complex number")
     String toString();
 

@@ -1,13 +1,12 @@
 package l2.patternDecorator.ComplexNumExponential;
 
 import l2.About;
-import l2.ComplexInterface;
+import l2.PointInterface;
 import l2.ComplexNumber.ComplexNumber;
 import l2.Info;
-import l2.patternProxy.NewComplexProxy.NewComplexProxy;
 
 @Info(name = "Exponential form")
-public class ComplexNumExponential implements ComplexInterface {
+public class ComplexNumExponential implements PointInterface {
     private ComplexNumber number;
 
     public ComplexNumExponential(ComplexNumber number){

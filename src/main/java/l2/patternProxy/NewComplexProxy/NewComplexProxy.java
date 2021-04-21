@@ -1,11 +1,11 @@
 package l2.patternProxy.NewComplexProxy;
 
-import l2.ComplexInterface;
+import l2.PointInterface;
 import l2.ComplexNumber.ComplexNumber;
 import l2.ComplexNumberExponential.ComplexNumberExponential;
 
-public class NewComplexProxy implements ComplexInterface {
-    private static ComplexInterface n;
+public class NewComplexProxy implements PointInterface {
+    private static PointInterface n;
 
     @Override
     public void start() {

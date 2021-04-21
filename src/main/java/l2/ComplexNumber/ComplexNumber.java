@@ -2,17 +2,16 @@ package l2.ComplexNumber;
 
 
 import l2.About;
-import l2.ComplexInterface;
+import l2.PointInterface;
 import l2.Info;
 import l2.patternObserver.Notifier;
 import l2.patternObserver.Observer;
-import l2.patternProxy.NewComplexProxy.NewComplexProxy;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Info(name = "Simple form")
-public class ComplexNumber implements ComplexInterface, Notifier {
+public class ComplexNumber implements PointInterface, Notifier {
     private double real;
     private double imaginary;
     private List observers;
